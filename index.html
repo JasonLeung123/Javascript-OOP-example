@@ -1,15 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="OOPApp">
 <head>
 <title>JavaScript - OOP</title>
 </head>
-<body>
+<body ng-controller="MainController">
 <div id="questions"></div>
-        <script type="text/javascript" src="js/index.js"></script>
+<div>Ask Question: {{question}}</div>    
+<div>Answer: {{answer}}</div>    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript" src="js/Question.js"></script>
     <script type="text/javascript" src="js/DragDropQuestion.js"></script>
     <script type="text/javascript" src="js/MultipleChoice.js"></script>
     <script type="text/javascript" src="js/DisplayQuestion.js"></script>
+    
+    <script type="text/javascript" src="js/AngularJS/Service/QuestionService.js"></script>
+    <script type="text/javascript" src="js/AngularJS/Controller/MainController.js"></script>
 </body>
 </html>
 

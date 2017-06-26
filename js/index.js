@@ -5,9 +5,11 @@ function inheritPrototype(childObject, parentObject) {
 
     //Then we set the constructor of this new object to point to the childObject.
     // Why do we manually set the copyOfParent constructor here, see the explanation immediately following this code block.
-    console.log(copyOfParent.constructor);
     copyOfParent.constructor = childObject;
-    console.log(copyOfParent.constructor);
+    
     // Then we set the childObject prototype to copyOfParent, so that the childObject can in turn inherit everything from copyOfParent (from parentObject)
     childObject.prototype = copyOfParent;
 }
+
+//Angular JS
+var OOPApp = angular.module('OOPApp', []);
